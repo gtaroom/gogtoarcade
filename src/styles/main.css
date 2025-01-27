@@ -1,0 +1,2064 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Inter" !important;
+  background: url("../images/BG\ \(1\).png") no-repeat fixed !important;
+  background-size: cover !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
+/* Preloader Container */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.header {
+  position: absolute; /* To match x and y positioning */
+  top: 10px;
+  left: 90px;
+  width: 1248px;
+  height: 65px;
+  background-color: rgba(38, 65, 90, 0.6) !important;
+  border-radius: 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 20px !important;
+  box-sizing: border-box !important;
+}
+
+.logo {
+  height: 70px; /* Adjust as per the design */
+}
+
+.nav {
+  position: absolute; /* Position relative to the parent container */
+  top: 10px; /* Y position */
+  left: 376px; /* X position */
+  width: 733px; /* Width from Figma */
+  height: 32px; /* Height from Figma */
+  display: flex;
+  justify-content: space-between; /* Space out the navigation items */
+  align-items: center; /* Align items vertically */
+}
+#nav-close {
+  position: absolute; /* Position at the top-right corner */
+  top: 65px;
+  right: 50px;
+  background: none; /* No background */
+  border: none; /* No border */
+  font-size: 10px; /* Larger size for visibility */
+  font-weight: bold;
+  color: white; /* Dark color */
+  cursor: pointer; /* Pointer cursor */
+  border: 3px solid white;
+  border-radius: 90px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure ul takes the full width of the nav */
+}
+
+.nav-item {
+  margin: 0; /* Remove any default margins */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff !important; /* Adjust color as per design */
+  font-size: 14px; /* Adjust for readability */
+  font-weight: 600;
+  padding: 0 10px; /* Add some spacing between links */
+  transition: color 0.3s;
+  font-family: "Barlow Condensed" !important;
+}
+
+.nav-link:hover {
+  color: #f0a500; /* Example hover effect */
+}
+
+.nav-button {
+  display: flex;
+  margin-left: 90px;
+  gap: 10px; /* Space between the login and register buttons */
+}
+
+.btn {
+  padding: 5px 15px;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-family: "Barlow Condensed", sans-serif !important;
+}
+
+.btn-orange {
+  background: linear-gradient(
+    to right,
+    #fe964a,
+    #e68a00
+  ) !important; /* Apply linear gradient */
+  color: white !important; /* Text color */
+  width: 90px !important; /* Set width to 90px */
+  height: 40px !important; /* Set height to 40px */
+  padding: 0 !important; /* Remove any extra padding */
+  border-radius: 100px !important; /* Button border radius */
+  text-decoration: none !important; /* Remove underline from links */
+  transition: background-color 0.3s ease !important; /* Smooth hover effect */
+  display: flex !important; /* Flex display to align text */
+  justify-content: center !important; /* Center text horizontally */
+  align-items: center !important; /* Center text vertically */
+  font-size: 16px !important; /* Adjust for readability */
+  font-weight: 400 !important;
+  font-family: "Barlow Condensed", sans-serif !important;
+}
+
+.btn-orange:hover {
+  background-color: #d88e00;
+}
+
+.banner {
+  background-image: url("../images/About\ \(3\).png");
+  margin: 0;
+  padding: 0;
+  background-size: cover; /* Ensures the image covers the entire div */
+  height: 800px; /* Set the height of the banner */
+  width: 100%; /* Ensure the banner spans the full width */
+  background-position: center !important;
+}
+.secondsection {
+  margin-top: 100px !important;
+  position: relative;
+  color: white;
+}
+.secondsection .sectioncontent {
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.24);
+  padding: 20px;
+  border-radius: 15px;
+}
+.secondsection .sectioncontent p {
+  margin-top: 20px;
+}
+.secondsection .sectioncontent .one {
+  width: 50px;
+  position: absolute;
+  top: -1px;
+  left: 150px !important;
+}
+.secondsection .sectioncontent .two {
+  width: 50px;
+  position: absolute;
+  top: -1px;
+  left: 48%;
+}
+.secondsection .sectioncontent .three {
+  width: 50px;
+  position: absolute;
+  top: -1px;
+  left: 80%;
+}
+
+.thirdsection {
+  margin-top: 19px;
+  color: white;
+}
+.thirdsection h2 {
+  font-size: 36px;
+  width: 700px;
+  text-align: center;
+  margin-left: 300px;
+}
+.thirdsection .items {
+  width: 50%;
+  margin-left: 300px;
+}
+
+.forthsection {
+  margin-bottom: 30px;
+}
+.hr-border {
+  width: 90%; /* Full width of the parent container */
+  height: 2px; /* Thickness of the line */
+  background-color: white; /* White color for the line */
+  margin: 14px 0px; /* Optional: Add spacing above and below the line */
+  margin-left: 30px;
+}
+.top-footer {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+.footer-top-image {
+  background-image: url("../images/top-footer.png");
+  margin: 0;
+  padding: 0;
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center !important;
+
+  width: 100% !important; /* Ensure the banner spans the full width */
+  height: 300px;
+}
+/* Style for the white line */
+.hr-border {
+  width: 100%;
+  height: 2px;
+  background-color: white; /* White line */
+  margin: 10px 0; /* Optional spacing */
+}
+
+/* Style for the footer text */
+.footer-copyright {
+  display: flex;
+  justify-content: space-between; /* Space between the two columns */
+  align-items: center; /* Align vertically */
+  color: white; /* White text */
+  font-size: 14px; /* Optional: Adjust text size */
+}
+
+/* Ensure the p tag inside bg-success has white text */
+.footer-copyright p {
+  color: white;
+  margin: 0; /* Optional: Remove extra margin */
+}
+
+/* Style for the links */
+.footer-copyright a {
+  color: white; /* White links */
+  text-decoration: none; /* Remove underline */
+  margin: 0 5px; /* Add spacing between links */
+}
+
+/* Add hover effect for links */
+.footer-copyright a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+footer .ending-footer {
+  margin-top: 10px;
+  background-color: rgba(38, 65, 90, 0.6);
+  padding: 40px 0;
+  width: 100%;
+}
+.ending-footer .footer-logo img {
+  width: 40%;
+}
+.ending-footer h6 {
+  color: white; /* Ensure the section titles are white */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.ending-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ending-footer ul li a {
+  margin: 5px 0;
+  color: white !important;
+  font-size: 12px;
+  text-decoration: none !important;
+}
+
+.ending-footer .icons {
+  color: white !important; /* Make Font Awesome icons white */
+  font-size: 20px;
+  /* margin-right: 15px; */
+}
+.ending-footer .icons a {
+  color: white !important; /* Make Font Awesome icons white */
+  text-decoration: none;
+  /* margin-right: 15px; */
+}
+.ending-footer .icons i {
+  margin-right: 20px; /* Add space between icons */
+}
+
+/* Add hover effect for social media icons */
+.ending-footer .icons:hover {
+  color: #f1c40f; /* Change color on hover (e.g., gold/yellow) */
+}
+.ending-footer .icons i:last-child {
+  margin-right: 0; /* Remove the margin on the last icon */
+}
+/* SUPPORT */
+.header-image {
+  background-image: url("../images/Group 17 (1) 2.png");
+  margin: 0;
+  padding: 0;
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center !important;
+
+  width: 100%; /* Ensure the banner spans the full width */
+  height: 460px;
+}
+.first-support-section {
+  margin-top: -27% !important;
+  color: white;
+}
+.first-support-section h2 {
+  width: 1000px;
+  font-size: 60px;
+}
+.first-support-section p {
+  width: 1000px;
+  font-size: 20px;
+}
+.first-support-section .btn {
+  color: black !important;
+  background-color: #adf125;
+  font-family: "Inter" !important;
+}
+.second-support-section {
+  margin-top: 7% !important;
+}
+.second-support-section h5 {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 2% !important;
+}
+
+.second-support-section .customer-support {
+  background-color: rgba(255, 255, 255, 0.64);
+  padding: 10px;
+  border-radius: 26px;
+  margin-top: 10px;
+  height: 330px;
+}
+.customer-support h2 {
+  color: #4f0297;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 20px;
+}
+.customer-support p {
+  font-size: 23px;
+  margin: 10px;
+}
+.customer-support a {
+  color: #4f0297 !important;
+  font-size: 20px;
+  margin: 20px;
+  text-decoration: none;
+}
+.seven-support-section {
+  margin-top: 7% !important;
+  color: white;
+}
+.seven-support-section .inner-title-content h2 {
+  font-size: 36px;
+  text-align: center;
+}
+.seven-support-section .inner-title-content p {
+  font-size: 16px;
+  text-align: center;
+}
+.seven-support-section .box-last-img {
+  background-image: url("../images/Group 16.png");
+  margin: 0;
+  padding: 0;
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center !important;
+
+  width: 90%; /* Ensure the banner spans the full width */
+  height: 155px;
+  margin-top: -100px;
+}
+.seven-support-section .sweepstakes-department {
+  margin-left: 10% !important;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.seven-support-section .sweepstakes-department a {
+  color: #a6f265;
+}
+.seven-support-section .contact-title {
+  margin-top: 10%;
+  text-align: center;
+}
+.seven-support-section .contact-image {
+  margin-left: 42% !important;
+}
+.contact-image img {
+  width: 50px !important;
+}
+/* PRIZE */
+.top-image {
+  background-image: url("../images/top-header.png");
+  margin: 0;
+  padding: 0;
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center !important;
+
+  width: 100%; /* Ensure the banner spans the full width */
+
+  height: 300px;
+}
+
+.hero {
+  margin-top: 1%;
+  color: white;
+}
+.hero h2 {
+  font-size: 50px;
+}
+.hero p {
+  font-size: 16px;
+}
+.hero .btn {
+  color: black !important;
+  background-color: #adf125;
+  font-family: "Inter" !important;
+}
+
+.hero .btn:hover {
+  color: black;
+  background-color: #adf125;
+}
+.innerDiv {
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 476px;
+}
+.innerDiv p,
+.innerDivSecond p {
+  line-height: 40px;
+  font-size: 32px;
+}
+.innerDiv h2 {
+  width: 60%;
+}
+.innerDivSecond h2 {
+  width: 40%;
+}
+.innerDiv img {
+  width: 60%;
+}
+.innerDivSecond {
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 476px;
+}
+.innerDivSecond img {
+  width: 60%;
+}
+
+.price-third-section {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.64);
+  border-radius: 20px;
+  color: black;
+  text-align: center;
+  height: 780px;
+}
+.inner-title h3 {
+  color: black;
+}
+.inner-title p {
+  color: black;
+}
+.price-third-section img {
+  width: 50%;
+}
+
+.price-forth-section {
+  margin-top: 50px;
+  background-color: transparent;
+}
+.price-forth-section .frame img {
+  width: 80%;
+}
+.price-forth-section p {
+  width: 358px !important;
+  font-size: 20px !important;
+  color: #f0dbdb;
+  margin: 20px;
+}
+.price-fifth-section {
+  color: white;
+}
+.price-fifth-section h3 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 40px !important;
+}
+.innerDivFifth p {
+  font-size: 24px;
+  color: #f0dbdb;
+}
+.sixSection {
+  margin-top: 50px;
+  background-image: url("../images/CArd.png");
+  text-align: center;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.sixSection h3 {
+  margin-top: 20px;
+  font-size: 32px;
+}
+.sixSection p {
+  font-size: 20px;
+}
+
+.sevenSection {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.inner-title-content-second p {
+  font-size: 20px;
+}
+.inner-title-content p {
+  font-size: 20px;
+}
+/* GAMES DESKTOP */
+.banner-games {
+  background-image: url("../images/Group\ 17\ \(2\).png") !important;
+  margin: 0;
+  padding: 0;
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center !important;
+
+  height: 800px; /* Set the height of the banner */
+  width: 100%; /* Ensure the banner spans the full width */
+}
+.games-flower {
+  background-image: url("../images/Group 3 (1).png") !important;
+  margin: 0;
+  padding: 0;
+  background-size: cover; /* Ensures the image covers the entire div */
+  height: 150px; /* Set the height of the banner */
+  width: 100%; /* Ensure the banner spans the full width */
+}
+.all-games {
+  margin-top: 0px;
+}
+.all-games h3 {
+  text-align: center !important;
+  margin-bottom: 30px !important;
+  font-size: 40px !important;
+  font-weight: bold !important;
+}
+.all-games .row {
+  padding: 10px; /* Optional: Reduce row padding */
+}
+.all-games img {
+  margin: 5px; /* Adjust spacing between ../images */
+  display: block; /* Ensures proper alignment */
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.sidebar-image .first-box img {
+  width: 90px; /* Maintain the desired size */
+  margin-top: -240px; /* Adjust to position correctly without overlap */
+  z-index: 1; /* Ensure it stays below other elements */
+  position: relative; /* Make z-index effective */
+}
+
+.sidebar-image .second-box img {
+  width: 85px; /* Adjust size of the second box image */
+  margin-top: -840px; /* Adjust position as needed */
+  margin-left: 1350px; /* Adjust position as needed */
+  z-index: 1; /* Ensure it stacks correctly */
+  position: relative;
+}
+/* Game item container */
+.game-item {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Game image */
+.game-image img {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1; /* Place the image in the background */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay container */
+.play-now-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Bring overlay to the front */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Button styles */
+.play-now-btn {
+  background-color: #618f15;
+  color: white;
+  border: 3px solid linear-gradient(0deg, #6e6f44 0%, #55451b 100%);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  text-transform: uppercase;
+  z-index: 3; /* Ensure button is above the overlay */
+  transition: background-color 0.3s ease-in-out;
+  font-weight: bold;
+  font-family: "Inter" !important;
+}
+
+.play-now-btn:hover {
+  background-color: #618f15;
+}
+
+/* Hover effects */
+.game-item:hover .play-now-overlay {
+  opacity: 1; /* Show the overlay */
+}
+
+.game-item:hover img {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/*POLICY*/
+.policy {
+  color: white;
+  font-family: "Inter" !important;
+}
+.policy h1,
+h2 {
+  color: white;
+}
+.policy h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.policy h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.policy ul {
+  margin: 10px 0 20px 20px;
+}
+.policy li {
+  margin-bottom: 5px;
+}
+.policy a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.policy a:hover {
+  text-decoration: underline;
+}
+
+/* AUTH */
+
+/* Aligning everything to the center */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* White text for contrast */
+  margin-bottom: 2%;
+}
+
+/* Centering the text and form */
+.auth-page h3 {
+  text-align: center;
+  font-size: 40px !important;
+  font-family: "Inter" !important;
+  width: 700px;
+  margin-left: 20%;
+  margin-bottom: 5%;
+}
+
+/* Styling the form container */
+.auth-sub {
+  background: #ffffff3d;
+  color: #000;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 500;
+}
+.auth-page .auth-title {
+  color: #4f0297;
+}
+.auth-sub input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff66;
+}
+.auth-page .auth-btn {
+  background-color: #618f15;
+  color: white;
+  border: 2px solid #55451b;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  z-index: 3; /* Ensure button is above the overlay */
+  transition: background-color 0.3s ease-in-out;
+  font-weight: bold;
+  font-family: "Inter" !important;
+  width: 22%;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+.auth-footer {
+  margin-left: 36%;
+}
+.auth-sub a {
+  color: #a6f265;
+  text-decoration: none;
+}
+
+.auth-sub a:hover {
+  text-decoration: underline;
+}
+
+/*FAQs */
+.faq {
+  color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Inter" !important;
+    background: url("../images/BG-MOBILE.png") fixed !important;
+    background-size: cover !important;
+    /* overflow-x: hidden; */
+  }
+
+  .header {
+    position: absolute !important;
+    top: 12px !important;
+    left: 31px !important;
+    background-color: rgba(38, 65, 90, 0.6) !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+
+  .logo {
+    max-width: 150px !important;
+    height: auto !important;
+  }
+  /* Apply the header styles only on tablets */
+  .header {
+    width: 752px !important; /* Exact width */
+    height: 80px !important; /* Exact height */
+    position: absolute !important;
+    top: 12px !important; /* Position for tablet */
+    left: 41px !important; /* Position for tablet */
+    border-radius: 8px !important; /* Border radius */
+    opacity: 1 !important; /* 100% opacity */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important; /* Ensures padding doesn't affect width/height */
+  }
+
+  .nav ul {
+    list-style: none !important;
+    display: flex !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: 14px !important; /* Position for tablet */
+    left: -250px !important; /* Position for tablet */
+  }
+
+  .nav-item {
+    padding: 1px 1px !important; /* Adjust padding as per the provided layout */
+  }
+
+  .nav-link {
+    text-decoration: none !important;
+    color: #fff !important;
+    font-size: 16px !important; /* Set font size to 16px */
+    font-weight: 500 !important; /* Set font weight to medium (500) */
+    line-height: 20px !important; /* Set line height to 20px */
+    letter-spacing: 0 !important; /* Set letter spacing to 0 */
+    transition: color 0.3s ease !important;
+    font-family: "Barlow Condensed" !important;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #ffd700 !important; /* Golden color for hover/active */
+  }
+  .nav-button {
+    display: flex !important; /* Use flexbox to align child elements */
+    justify-content: space-between !important; /* Space out the buttons evenly */
+    align-items: center !important; /* Vertically align items in the center */
+    color: white !important; /* Text color */
+    position: absolute !important;
+    top: -2px !important; /* Position for tablet */
+    left: 360px !important; /* Position for tablet */
+  }
+  .btn {
+    color: white !important; /* Text color */
+    font-size: 16px !important;
+    font-weight: 500 !important; /* Set font weight to medium (500) */
+  }
+  .btn-orange {
+    width: 165px !important; /* Set width to 165px */
+    height: 40px !important; /* Set height to 40px */
+    background: linear-gradient(
+      to right,
+      #fe964a,
+      #e68a00
+    ) !important; /* Apply linear gradient */
+    color: white !important; /* Text color */
+    width: 90px !important; /* Set width to 90px */
+    height: 40px !important; /* Set height to 40px */
+    padding: 0 !important; /* Remove any extra padding */
+    border-radius: 100px !important; /* Button border radius */
+    text-decoration: none !important; /* Remove underline from links */
+    transition: background-color 0.3s ease !important; /* Smooth hover effect */
+    display: flex !important; /* Flex display to align text */
+    justify-content: center !important; /* Center text horizontally */
+    align-items: center !important; /* Center text vertically */
+  }
+
+  .btn-orange:hover {
+    background-color: #e68a00 !important; /* Darker orange on hover */
+  }
+
+  .banner {
+    background-image: url("../images/Group\ 17.png");
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    height: 800px; /* Set the height of the banner */
+    width: 100%; /* Ensure the banner spans the full width */
+  }
+  .secondsection {
+    margin-top: 30px;
+    position: relative;
+  }
+  .secondsection .sectioncontent {
+    background-color: rgba(255, 255, 255, 0.24);
+    padding: 13px;
+    border-radius: 15px;
+  }
+  .secondsection .sectioncontent p {
+    margin-top: 20px;
+  }
+  .secondsection .sectioncontent .one {
+    width: 50px;
+    position: absolute;
+    top: -19px;
+    left: 148px !important;
+  }
+  .secondsection .sectioncontent .two {
+    width: 50px;
+    position: absolute;
+    top: -19px !important;
+    left: 70% !important;
+  }
+  .secondsection .sectioncontent .three {
+    width: 50px;
+    position: absolute;
+    top: -19px;
+    left: 40% !important;
+  }
+  .sectioncontentthree {
+    position: absolute;
+    top: 110% !important;
+    left: 25% !important;
+  }
+
+  .thirdsection {
+    margin-top: 90px !important;
+    color: white;
+  }
+  .thirdsection h2 {
+    font-size: 40px;
+    width: 600px;
+    text-align: center;
+    margin-left: 50px;
+  }
+  .thirdsection .items {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .forthsection {
+    margin-bottom: 30px;
+  }
+  .footer-top-image {
+    background-image: url("../images/desktop-flower.png");
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    width: 100%; /* Ensure the banner spans the full width */
+    height: 300px;
+  }
+  /* PRICE */
+  .top-image {
+    background-image: url("../images/Group\ 19\ \(1\).png");
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    width: 100%; /* Ensure the banner spans the full width */
+    height: 300px;
+  }
+  .hero {
+    margin-top: -8% !important;
+    color: white;
+    margin-left: 50px;
+  }
+  .hero h2 {
+    width: 600px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Inter" !important;
+    text-align: center !important;
+  }
+  .hero p {
+    width: 600px;
+    font-size: 30px;
+  }
+  .hero .btn {
+    color: black;
+    background-color: #adf125;
+    font-family: "Inter" !important;
+    font-size: 26px;
+  }
+  .price-info {
+    margin-top: 7% !important;
+  }
+  .price-info h5 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 2% !important;
+  }
+  .innerDiv {
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 546px !important;
+    margin-bottom: 20px;
+  }
+  .innerDiv p,
+  .innerDivSecond p {
+    line-height: 30px;
+    font-size: 25px !important;
+  }
+  .innerDiv h2 {
+    width: 60%;
+  }
+  .innerDivSecond h2 {
+    width: 40%;
+  }
+  .price-third-section .innerDiv img {
+    width: 80%;
+  }
+  .innerDivSecond {
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 506px;
+  }
+  .innerDivSecond img {
+    width: 60%;
+  }
+  .price-forth-section .frame img {
+    margin-left: 50px;
+  }
+  .price-forth-section .line img {
+    transform: rotate(90deg); /* Rotate the image 90 degrees */
+    width: 0.7%; /* Ensure the width adjusts correctly */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure no extra spacing below the image */
+    margin-top: -260px;
+    margin-left: 340px;
+  }
+  .price-forth-section p {
+    font-size: 40px !important;
+    width: 100% !important;
+  }
+  .price-fifth-section h3 {
+    margin-bottom: 10px;
+  }
+  .price-fifth-section p {
+    font-size: 40px;
+  }
+  .customer-support {
+    background-color: rgba(255, 255, 255, 0.64);
+    padding: 10px;
+    border-radius: 26px;
+    margin-top: 10px;
+    height: 330px;
+  }
+  .customer-support h2 {
+    color: #4f0297;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 20px;
+  }
+  .customer-support p {
+    font-size: 23px;
+    margin: 20px;
+  }
+  .customer-support a {
+    color: #4f0297 !important;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+  }
+  .sixSection {
+    margin-top: 50px;
+    background-image: url("../images/CArd.png");
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    background-size: cover; /* Ensures the image covers the entire div */
+    height: 1000px; /* Set the height of the banner */
+    width: 100%; /* Ensure the banner spans the full width */
+    padding: 40px;
+  }
+
+  .sixSection h3 {
+    margin-top: 20px;
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 70px;
+  }
+  .sixSection p {
+    font-size: 35px;
+  }
+
+  .sevenSection {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .inner-title-content-second p {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .inner-title-content p {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  /* SUPPORT */
+  .header-image {
+    background-image: url("../images/Group\ 23.png");
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    width: 100%; /* Ensure the banner spans the full width */
+    height: 260px;
+  }
+  .first-support-section {
+    margin-top: -17% !important;
+    color: white;
+    margin-left: -10px;
+  }
+  .first-support-section h2 {
+    width: 700px;
+    font-size: 50px;
+  }
+  .first-support-section p {
+    width: 700px;
+    font-size: 20px;
+  }
+  .first-support-section .btn {
+    color: black !important;
+    background-color: #adf125;
+    font-family: "Inter" !important;
+  }
+  .second-support-section {
+    margin-top: 7% !important;
+  }
+  .second-support-section h5 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 2% !important;
+  }
+
+  .second-support-section .customer-support {
+    background-color: rgba(255, 255, 255, 0.64);
+    padding: 10px;
+    border-radius: 26px;
+    margin-top: 10px;
+    height: 330px;
+  }
+  .customer-support h2 {
+    color: #4f0297;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 20px;
+  }
+  .customer-support p {
+    font-size: 23px;
+    margin: 20px;
+  }
+  .customer-support a {
+    color: #4f0297 !important;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+  }
+  .seven-support-section .box-last-img {
+    background-image: url("../images/Group\ 24.png");
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    width: 90%; /* Ensure the banner spans the full width */
+    height: 115px;
+    margin-top: -100px !important;
+  }
+  .seven-support-section {
+    margin-top: 7% !important;
+    color: white;
+  }
+
+  .seven-support-section .inner-title-content h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .seven-support-section .inner-title-content p {
+    font-size: 25px;
+    text-align: center;
+    line-height: 48px !important;
+  }
+
+  .seven-support-section .sweepstakes-department {
+    margin-left: 1% !important;
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  .seven-support-section .sweepstakes-department a {
+    color: #a6f265;
+  }
+  .seven-support-section .contact-title {
+    margin-top: 10%;
+    text-align: center;
+  }
+  .seven-support-section .contact-image {
+    margin-left: 35% !important;
+  }
+  .contact-image img {
+    width: 55px !important;
+  }
+
+  /* GAMES */
+  .banner-games {
+    background-image: url("../images/Group\ 25.png") !important;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    height: 800px; /* Set the height of the banner */
+    width: 100%; /* Ensure the banner spans the full width */
+  }
+  .games-flower {
+    background-image: url("../images/Group 3 (1).png") !important;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    height: 150px; /* Set the height of the banner */
+    width: 100%; /* Ensure the banner spans the full width */
+  }
+  .all-games {
+    margin-top: -20px;
+  }
+  .all-games h3 {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+    font-size: 40px !important;
+    font-weight: bold !important;
+  }
+  .all-games .row {
+    padding: 10px !important;
+  }
+  .all-games img {
+    margin-top: 5px; /* Adjust spacing between ../images */
+    display: block; /* Ensures proper alignment */
+    z-index: 2;
+    position: relative;
+  }
+  .all-games .col-md-3 {
+    margin-left: 50px;
+  }
+  .sidebar-image .first-box img {
+    width: 90px; /* Maintain the desired size */
+    margin-top: -240px; /* Adjust to position correctly without overlap */
+    z-index: 1; /* Ensure it stays below other elements */
+    position: relative; /* Make z-index effective */
+  }
+
+  .sidebar-image .second-box img {
+    width: 85px; /* Adjust size of the second box image */
+    margin-top: -840px; /* Adjust position as needed */
+    margin-left: 740px; /* Adjust position as needed */
+    z-index: 1; /* Ensure it stacks correctly */
+    position: relative;
+  }
+
+  /* AUTH */
+  .auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* White text for contrast */
+  }
+
+  /* Centering the text and form */
+  .auth-page h3 {
+    text-align: center;
+    font-size: 35px !important;
+    font-family: "Inter" !important;
+    width: 500px;
+    margin-left: 15%;
+    margin-bottom: 5%;
+  }
+  .auth-page {
+    margin-top: -40px !important;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Inter" !important;
+    background: url("../images/BG-MOBILE.png") fixed !important;
+    background-size: cover !important;
+    overflow-x: hidden !important;
+    /* box-sizing: border-box !important; */
+  }
+
+  .menu-toggle {
+    display: block !important;
+  }
+  .header {
+    position: absolute !important; /* To match x and y positioning */
+    top: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+    height: 65px !important;
+    background-color: rgba(38, 65, 90, 0.6) !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+  }
+  .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+
+  .logo {
+    max-width: 30px !important;
+    height: auto !important;
+  }
+
+  /* General Reset */
+
+  /* Navigation Styling */
+  .nav {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important; /* Full height */
+    background-color: rgba(38, 65, 90, 0.9) !important;
+    display: none !important; /* Initially hidden */
+    flex-direction: column !important; /* Stack items vertically */
+    justify-content: flex-start !important; /* Align items at the top */
+    align-items: center !important; /* Center items horizontally */
+    padding: 40px 0 !important; /* Add space at the top */
+    z-index: 9999; /* Ensure it appears above other content */
+    transition: all 0.3s ease-in-out !important; /* Smooth transition */
+  }
+
+  /* Navigation List */
+  .nav-list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    text-align: center !important; /* Center the text */
+  }
+
+  /* Navigation Item */
+  .nav-item {
+    margin: 15px 0 !important; /* Add space between items */
+  }
+  .nav ul {
+    display: block;
+  }
+  /* Navigation Link */
+  .nav-link {
+    text-decoration: none !important;
+    color: #fff !important;
+    font-size: 18px !important; /* Larger font for better readability */
+    font-weight: bold !important;
+    padding: 12px 20px !important; /* Adjust padding for better clickability */
+    font-family: "Barlow Condensed" !important;
+
+    border-radius: 5px !important; /* Rounded corners for buttons */
+    width: 50% !important; /* Make each link span full width */
+    transition: background-color 0.3s ease !important;
+  }
+
+  /* Hover Effect */
+  .nav-link:hover {
+    background-color: #f0a500 !important;
+  }
+
+  /* Button Styling (for any additional buttons like "Sign Up") */
+  .nav-button {
+    /* display: flex !important; */
+    flex-direction: column !important; /* Vertical button layout */
+    gap: 20px !important; /* Space between buttons */
+    position: absolute;
+    left: -80px;
+  }
+  .sidebar-image .second-box img {
+    width: 85px; /* Adjust size of the second box image */
+    margin-top: -840px; /* Adjust position as needed */
+    margin-left: 340px !important; /* Adjust position as needed */
+    z-index: 1; /* Ensure it stacks correctly */
+    position: relative;
+  }
+  /* Standard Button Styling */
+  .btn {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    text-align: left !important;
+  }
+
+  /* Orange Button */
+  .btn-orange {
+    background: linear-gradient(to right, #fe964a, #e68a00) !important;
+    color: white !important;
+    padding: 12px 20px !important;
+    border-radius: 5px !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: background-color 0.3s ease !important;
+  }
+
+  /* Orange Button Hover */
+  .btn-orange:hover {
+    background-color: #d88e00 !important;
+  }
+
+  /* Mobile Menu Toggle Button */
+
+  /* Show/Hide Nav */
+  .nav.open {
+    display: flex !important; /* Show menu when open */
+  }
+
+  /* Add some background for the body when menu is open */
+  body.menu-open {
+    overflow: hidden !important;
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Dimmed background */
+  }
+
+  .banner {
+    background-image: url("../images/Group\ 19.png") !important;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center !important;
+    height: 690px; /* Set the height of the banner */
+    width: 100%; /* Ensure the banner spans the full width */
+    overflow-x: hidden !important;
+  }
+  .secondsection {
+    margin-top: 30px;
+    position: relative;
+  }
+  .secondsection .sectioncontent {
+    background-color: rgba(255, 255, 255, 0.24);
+    padding: 13px;
+    border-radius: 15px;
+    margin-top: 50px;
+  }
+  .secondsection .sectioncontent p {
+    margin-top: 20px;
+  }
+  .secondsection .sectioncontent .one {
+    width: 50px;
+    position: absolute;
+    top: 29px !important;
+    left: 148px !important;
+  }
+  .secondsection .sectioncontent .two {
+    width: 50px;
+    position: absolute;
+    top: 274px !important;
+    left: 40% !important;
+  }
+  .secondsection .sectioncontent .three {
+    width: 50px;
+    position: absolute;
+    top: 70%;
+    left: 40% !important;
+  }
+
+  .thirdsection {
+    margin-top: 20px;
+    color: white;
+  }
+  .thirdsection h2 {
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    margin-left: 30px;
+  }
+  .thirdsection .items {
+    width: 100%;
+    margin-left: 0px !important;
+  }
+  .thirdsection .items img {
+    width: 100% !important;
+  }
+  .thirdsection .items-two img {
+    width: 80% !important;
+  }
+
+  .forthsection {
+    margin-bottom: 30px;
+  }
+  /* footer {
+    width: 100%;
+    margin: 0px !important;
+    padding: 0% !important;
+  } */
+  .footer-top-image {
+    background-image: url("../images/mobile-flower.png") !important;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center !important;
+
+    width: 100%; /* Ensure the banner spans the full width */
+    height: 180px;
+  }
+  .footer-copyright p,
+  .footer-copyright a {
+    font-size: 7px; /* Stack the items */
+  }
+
+  footer .ending-footer {
+    margin-top: 10px;
+    background-color: rgba(38, 65, 90, 0.6);
+    padding: 40px 0;
+    width: 100%;
+    position: relative;
+  }
+  .ending-footer .icons {
+    position: absolute;
+    bottom: 70 !important;
+    right: 0 !important;
+    width: 37%;
+    padding-top: 30px;
+  }
+  /* PRICE */
+  .top-image {
+    background-image: url("../images/Group\ 20.png");
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    width: 95%; /* Ensure the banner spans the full width */
+    height: 200px;
+  }
+  .hero {
+    margin-top: -8% !important;
+    color: white;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+  .hero h2 {
+    width: 400px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Inter" !important;
+    text-align: center !important;
+  }
+  .hero p {
+    width: 400px;
+    font-size: 20px;
+  }
+  .hero .btn {
+    color: black;
+    background-color: #adf125;
+    font-family: "Inter" !important;
+    font-size: 26px;
+  }
+  .price-info {
+    margin-top: 0% !important;
+  }
+  .price-info h5 {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 2% !important;
+  }
+  .innerDiv {
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 346px;
+    margin-bottom: 20px;
+  }
+  .innerDiv p,
+  .innerDivSecond p {
+    line-height: 30px;
+    font-size: 18px !important;
+  }
+  .innerDiv h2 {
+    width: 100%;
+  }
+  .innerDivSecond h2 {
+    width: 100%;
+  }
+  .price-third-section .innerDiv img {
+    width: 80%;
+  }
+  .innerDiv p,
+  .innerDivSecond p {
+    line-height: 30px !important;
+    font-size: 32px;
+  }
+  .innerDivSecond {
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 346px;
+  }
+  .innerDivSecond img {
+    width: 60%;
+  }
+  .price-third-section {
+    height: 750px !important;
+  }
+  .price-forth-section .frame img {
+    margin-left: 40px;
+  }
+  .price-forth-section .line img {
+    transform: rotate(90deg); /* Rotate the image 90 degrees */
+    width: 0.5%; /* Ensure the width adjusts correctly */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure no extra spacing below the image */
+    margin-top: -100px;
+    margin-left: 200px;
+  }
+  .price-forth-section p {
+    font-size: 25px !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-top: 40px !important;
+  }
+  .price-fifth-section h3 {
+    margin-bottom: 0px;
+    font-size: 30px;
+  }
+
+  .price-fifth-section p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .price-fifth-section img {
+    width: 60px;
+  }
+  .innerDivFifth p {
+    font-size: 18px;
+    color: #f0dbdb;
+  }
+  .innerDivFifth .price-header {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .innerDivFifth .price-text {
+    font-size: 20px;
+    margin-top: -15px;
+  }
+  /* .customer-support {
+    background-color: rgba(255, 255, 255, 0.64);
+    padding: 10px;
+    border-radius: 26px;
+    margin-top: 10px;
+    height: 430px !important;
+    width: 100% !important;
+    margin-left: 7px;
+  }
+  .customer-support h2 {
+    color: #4f0297;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 20px;
+  }
+  .customer-support p {
+    font-size: 20px;
+    margin: 20px;
+  }
+  .customer-support a {
+    color: #4f0297 !important;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+  } */
+  .sixSection {
+    margin-top: 50px;
+    background-image: url("../images/CArd\ \(4\).png");
+    text-align: center;
+    padding: 20px;
+    background-size: cover; /* Ensures the image covers the entire div */
+    height: 600px; /* Set the height of the banner */
+    width: 100%; /* Ensure the banner spans the full width */
+    padding: 40px;
+  }
+
+  .sixSection h3 {
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .sixSection p {
+    font-size: 18px;
+  }
+
+  .sevenSection {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .inner-title-content-second p {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .inner-title-content p {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  /* SUPPORT */
+  .header-image {
+    background-image: url("../images/Group\ 21\ \(1\).png");
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    width: 100%; /* Ensure the banner spans the full width */
+    height: 100px;
+  }
+  .first-support-section {
+    margin-top: -1% !important;
+    color: white;
+    margin-left: -10px;
+  }
+  .first-support-section h2 {
+    width: 400px;
+    font-size: 30px;
+  }
+  .first-support-section p {
+    width: 400px;
+    font-size: 16px;
+  }
+  .first-support-section .btn {
+    color: black !important;
+    background-color: #adf125;
+    font-family: "Inter" !important;
+  }
+
+  .second-support-section {
+    margin: 7% !important;
+    width: 100%;
+  }
+  .second-support-section h5 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 2% !important;
+  }
+
+  .second-support-section .customer-support {
+    background-color: rgba(255, 255, 255, 0.64);
+    padding: 10px;
+    border-radius: 26px;
+    margin-top: 10px;
+    height: 320px;
+    width: 108% !important;
+    margin-left: 0px !important;
+  }
+
+  .customer-support h2 {
+    color: #4f0297;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px;
+  }
+  .customer-support p {
+    font-size: 18px;
+    margin: 20px;
+  }
+  .customer-support a {
+    color: #4f0297 !important;
+    font-size: 18px;
+    margin: 20px;
+    text-decoration: none;
+  }
+  .seven-support-section .box-last-img {
+    background-image: url("../images/Group\ 22.png");
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    width: 100%; /* Ensure the banner spans the full width */
+    height: 85px;
+    margin-top: -60px !important;
+  }
+  .seven-support-section {
+    margin-top: 7% !important;
+    color: white;
+  }
+
+  .seven-support-section .inner-title-content h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .seven-support-section .inner-title-content p {
+    font-size: 25px;
+    text-align: center;
+    line-height: 48px !important;
+  }
+
+  .seven-support-section .sweepstakes-department {
+    margin-left: 1% !important;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .seven-support-section .sweepstakes-department a {
+    color: #a6f265;
+  }
+  .seven-support-section .contact-title {
+    margin-top: 10%;
+    text-align: center;
+  }
+  .seven-support-section .contact-image {
+    margin-left: 30% !important;
+  }
+  .contact-image img {
+    width: 45px !important;
+  }
+  /*  GAMES */
+  .banner-games {
+    background-image: url("../images/Group\ 26.png") !important;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center !important;
+    height: 700px; /* Set the height of the banner */
+    width: 100%; /* Ensure the banner spans the full width */
+  }
+  .games-flower {
+    background-image: url("../images/Group 3 (1).png") !important;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire div */
+    height: 150px; /* Set the height of the banner */
+    width: 100%; /* Ensure the banner spans the full width */
+  }
+  /* Game image */
+  .game-image img {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1; /* Place the image in the background */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Overlay container */
+  .play-now-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98% !important;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Bring overlay to the front */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  /* Button styles */
+  .play-now-btn {
+    background-color: #618f15;
+    color: white;
+    border: 3px solid linear-gradient(0deg, #6e6f44 0%, #55451b 100%);
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    z-index: 3; /* Ensure button is above the overlay */
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    font-family: "Inter" !important;
+  }
+
+  .play-now-btn:hover {
+    background-color: #618f15;
+  }
+
+  /* Hover effects */
+  .game-item:hover .play-now-overlay {
+    opacity: 1; /* Show the overlay */
+  }
+
+  .game-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  .all-games {
+    margin-top: 0px;
+  }
+  .all-games h3 {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+    font-size: 40px !important;
+    font-weight: bold !important;
+  }
+  .all-games .row {
+    padding: 10px; /* Optional: Reduce row padding */
+  }
+  .all-games img {
+    margin: 5px; /* Adjust spacing between ../images */
+    display: block; /* Ensures proper alignment */
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    position: relative;
+    width: 100px;
+  }
+
+  .sidebar-image .first-box img {
+    width: 90px; /* Maintain the desired size */
+    margin-top: -220px; /* Adjust to position correctly without overlap */
+    z-index: 1; /* Ensure it stays below other elements */
+    position: relative; /* Make z-index effective */
+  }
+
+  .sidebar-image .second-box img {
+    display: none;
+  }
+
+  /* MOBILE */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex !important;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .bottom-nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+    flex: 1;
+  }
+
+  .bottom-nav a.active {
+    color: #007bff;
+  }
+
+  .bottom-nav a span {
+    display: block;
+    font-size: 18px;
+  }
+  .bottom-nav a {
+    font-size: 13px;
+  }
+  .menu-toggle {
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 10000; /* Ensure it is above the header */
+  }
+  .header-button {
+    display: flex !important;
+    gap: 10px; /* Space between the login and register buttons */
+  }
+  .header-btn1 {
+    background: linear-gradient(
+      to right,
+      #fe964a,
+      #e68a00
+    ) !important; /* Apply linear gradient */
+    color: white !important; /* Text color */
+    width: 90px !important; /* Set width to 90px */
+    height: 40px !important; /* Set height to 40px */
+    padding: 0 !important; /* Remove any extra padding */
+    border-radius: 10px !important; /* Button border radius */
+    text-decoration: none !important; /* Remove underline from links */
+    transition: background-color 0.3s ease !important; /* Smooth hover effect */
+    display: flex !important; /* Flex display to align text */
+    justify-content: center !important; /* Center text horizontally */
+    align-items: center !important; /* Center text vertically */
+    font-weight: 500;
+    font-family: "Barlow Condensed" !important;
+  }
+  .header-btn2 {
+    background: linear-gradient(
+      to right,
+      #fe964a,
+      #95bf00
+    ) !important; /* Apply linear gradient */
+    color: white !important; /* Text color */
+    width: 90px !important; /* Set width to 90px */
+    height: 40px !important; /* Set height to 40px */
+    padding: 0 !important; /* Remove any extra padding */
+    border-radius: 10px !important; /* Button border radius */
+    text-decoration: none !important; /* Remove underline from links */
+    transition: background-color 0.3s ease !important; /* Smooth hover effect */
+    display: flex !important; /* Flex display to align text */
+    justify-content: center !important; /* Center text horizontally */
+    align-items: center !important; /* Center text vertically */
+    font-weight: 500;
+    font-family: "Barlow Condensed" !important;
+  }
+
+  /* AUTH */
+
+  /* Aligning everything to the center */
+
+  /* Centering the text and form */
+  .auth-page h3 {
+    text-align: center;
+    font-size: 25px !important;
+    font-family: "Inter" !important;
+    width: 300px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+
+  /* Styling the form container */
+  .auth-sub {
+    background: #ffffff3d;
+    color: #000;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 500;
+  }
+  .auth-page .auth-title {
+    color: #4f0297;
+  }
+  .auth-sub input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff66;
+  }
+  .auth-page .auth-btn {
+    background-color: #618f15;
+    color: white;
+    border: 2px solid #55451b;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    z-index: 3; /* Ensure button is above the overlay */
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    font-family: "Inter" !important;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 24%;
+  }
+  .auth-footer {
+    margin-left: 6%;
+  }
+  .auth-sub a {
+    color: #a6f265;
+    text-decoration: none;
+  }
+
+  .auth-sub a:hover {
+    text-decoration: underline;
+  }
+}
