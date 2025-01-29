@@ -135,12 +135,12 @@ const GoldenTicket = () => {
                 <div className="inner-One">
                   <p className="price-header">PLAY FOR FUN</p>
                   <p className="price-text">
-                    Use Gold Coins to explore our games with no monetary value,
-                    or try Promotional Play with Sweeps Coins, obtained through
-                    free entry methods or bonuses. Sweeps Coins can be redeemed
-                    for rewards through a secure and compliant process. No
-                    purchase is necessary to participate, and Sweeps Coins have
-                    no cash value outside the sweepstakes redemption process.
+                    Use Gold Coins to explore our games or try Promotional Play
+                    with Sweeps Coins, obtained through free entry methods or
+                    bonuses. Sweeps Coins can be redeemed for rewards through a
+                    secure and compliant process. No purchase is necessary to
+                    participate, and Sweeps Coins have no cash value outside the
+                    sweepstakes redemption process.
                   </p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ const GoldenTicket = () => {
             new games to our collection. With fresh releases every month, you’ll
             find an array of themes, features, and styles to match your
             preferences. From bonus features and multipliers to special events
-            and exclusive prizes, there’s something for everyone at Golden
+            and exclusive rewards, there’s something for everyone at Golden
             Ticket.
           </p>
         </div>

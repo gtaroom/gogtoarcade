@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
+import "font-awesome/css/font-awesome.min.css";
+import { FaTiktok } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../styles/main.css";
 import Header from "../components/Header";
@@ -46,7 +47,7 @@ const Support = () => {
                   <h2>Customer Support</h2>
                   <p>
                     Have a question about your account or gameplay? Our
-                    dedicated Customer Support team is available to help you
+                    dedicated Customer Support team is available to help you.
                   </p>
                   <p>
                     <a
@@ -158,18 +159,37 @@ const Support = () => {
               </div>
             </div>
             <div className="col-12">
-              <div className="contact-title">
+              <div className="contact-title ">
                 <h4>Connect with Us on Social Media</h4>
                 <p>
                   Stay updated with our latest news, games, and promotions.
                   Follow us here.
                 </p>
               </div>
+
               <div className="col-12">
                 <div className="contact-image mb-4">
-                  <img src={igImage} alt="Instagram" />
-                  <img src={tiktokImage} alt="TikTok" />
-                  <img src={facebookImage} alt="Facebook" />
+                  <a
+                    href="https://www.instagram.com/goldenticketonlinearcade"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={igImage} alt="Instagram" />
+                  </a>
+                  <a
+                    href="https://tiktok.com/@GoldenTicketCasino"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={tiktokImage} alt="TikTok" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/Goldenticketonlinearcade/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={facebookImage} alt="Facebook" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -230,24 +250,34 @@ const Support = () => {
                   </li>
                 </ul>
               </div>
+              {/* Social Media Icons */}
               <div className="col-lg-2 col-md-2 icons">
-                <a href="https://www.instagram.com/goldenticketonlinearcade">
+                <a
+                  href="https://www.instagram.com/goldenticketonlinearcade"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i
-                    className="fa-brands fa-instagram"
-                    style={{ marginRight: "10px" }}
+                    className="fa fa-instagram"
+                    style={{ fontSize: "20px", marginRight: "10px" }}
                   ></i>
                 </a>
-                <a href="https://www.facebook.com/Goldenticketonlinearcade/">
+                <a
+                  href="https://www.facebook.com/Goldenticketonlinearcade/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i
-                    className="fa-brands fa-facebook"
-                    style={{ marginRight: "10px" }}
+                    className="fa fa-facebook-square"
+                    style={{ fontSize: "20px", marginRight: "10px" }}
                   ></i>
                 </a>
-                <a href="https://tiktok.com/@GoldenTicketCasino">
-                  <i
-                    className="fa-brands fa-tiktok"
-                    style={{ marginRight: "10px" }}
-                  ></i>
+                <a
+                  href="https://tiktok.com/@GoldenTicketCasino"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTiktok style={{ fontSize: "20px", marginRight: "10px" }} />
                 </a>
               </div>
               <div className="col-12">

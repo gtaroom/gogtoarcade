@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom"; // Assuming react-router-dom is used for routing
 import "../styles/main.css";
 import footer_logo from "../images/footer-logo.png";
+import "font-awesome/css/font-awesome.min.css";
+import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   const handleMenuToggle = () => {
@@ -31,7 +33,6 @@ const Footer = () => {
             <div className="col-lg-4 col-md-4 footer-logo col-12">
               <img src={footer_logo} alt="Footer Logo" />
             </div>
-
             {/* Navigation Links */}
             <div className="col-lg-2 col-md-2 col-4">
               <h6>Navigation</h6>
@@ -53,7 +54,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
             {/* Sign In Links */}
             <div className="col-lg-2 col-md-2 col-4">
               <h6>Sign In</h6>
@@ -66,7 +66,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
             {/* Quick Links */}
             <div className="col-lg-2 col-md-2 col-4">
               <h6>Quick Links</h6>
@@ -82,7 +81,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
             {/* Social Media Icons */}
             <div className="col-lg-2 col-md-2 icons">
               <a
@@ -91,8 +89,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <i
-                  className="fa-brands fa-instagram"
-                  style={{ marginRight: "10px" }}
+                  className="fa fa-instagram"
+                  style={{ fontSize: "20px", marginRight: "10px" }}
                 ></i>
               </a>
               <a
@@ -101,8 +99,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <i
-                  className="fa-brands fa-facebook"
-                  style={{ marginRight: "10px" }}
+                  className="fa fa-facebook-square"
+                  style={{ fontSize: "20px", marginRight: "10px" }}
                 ></i>
               </a>
               <a
@@ -110,18 +108,13 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i
-                  className="fa-brands fa-tiktok"
-                  style={{ marginRight: "10px" }}
-                ></i>
+                <FaTiktok style={{ fontSize: "20px", marginRight: "10px" }} />
               </a>
             </div>
-
             {/* Horizontal Divider */}
             <div className="col-12">
               <div className="hr-border"></div>
             </div>
-
             {/* Disclaimer Text */}
             <p
               style={{
@@ -135,11 +128,10 @@ const Footer = () => {
               their respective jurisdiction. Gaming is addictive. Please play
               responsibly
             </p>
-
             {/* Footer Copyright */}
             <div className="footer-copyright">
               <div className="col-7">
-                <p>© 2024 Gtoarcade. All rights reserved for copyright</p>
+                <p>© 2025 Gtoarcade. All rights reserved for copyright</p>
               </div>
               <div className="col-5">
                 <span>
@@ -148,7 +140,6 @@ const Footer = () => {
                 </span>
               </div>
             </div>
-
             {/* Bottom Navigation */}
             <div className="bottom-nav" style={{ display: "none" }}>
               <a

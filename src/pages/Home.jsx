@@ -7,12 +7,12 @@ import bonusIcon from "../images/Bonus_icon.png";
 import rewardsIcon from "../images/Rewards_icon.png";
 import funIcon from "../images/fun_icon.png";
 // import faqIcon from "../images/Faq_icon.png";
-// import promotionIcon from "../images/promotion.png";
+import promotionIcon from "../images/promotion.png";
 import starIcon from "../images/Star_icon.png";
-import mail_logo from "../images/mail.png";
-import coin_logo from "../images/coin.png";
-import trophy_logo from "../images/trophy.png";
-import bonus_logo from "../images/bonus.png";
+import mail_logo from "../images/mail_icon.png";
+import coin_logo from "../images/coins.png";
+import trophy_logo from "../images/Trophy- icons.png";
+import bonus_logo from "../images/Gift-icon.png";
 import text_large from "../images/Text-large.png";
 import { Link } from "react-router-dom"; // Assuming react-router-dom is used for routing
 
@@ -70,7 +70,27 @@ const Home = () => {
           <img src={rewardsIcon} alt="" />
           <img src={starIcon} alt="" />
           <img src={funIcon} alt="" />
-          {/* <img src={promotionIcon} alt="" /> */}
+          <div
+            className="promotion-container"
+            style={{ position: "relative", display: "inline-block" }}
+          >
+            <img src={promotionIcon} alt="PROMOTIONS" />
+            <span
+              className="promotion-text"
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                fontSize: "12px",
+                color: "black", // Adjust color as needed
+                fontWeight: "700",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Optional for better visibility
+              }}
+            >
+              HOT SPINS
+            </span>
+          </div>
         </div>
 
         <div className="shape">
@@ -78,38 +98,60 @@ const Home = () => {
         </div>
 
         <div className="footer-secondsection">
-          <img
-            src={mail_logo}
-            className="img-fluid"
-            alt="Mail"
-            id="mail-icon"
-            title="Contact Us"
-            onClick={() => showPopup("mail")}
-          />
-          <img
-            src={coin_logo}
-            className="img-fluid"
-            alt="Coins"
-            id="coin-icon"
-            title="View Coins"
-            onClick={() => showPopup("coin")}
-          />
-          <img
-            src={trophy_logo}
-            className="img-fluid"
-            alt="Competitions"
-            id="competition-icon"
-            title="Competitions"
-            onClick={() => showPopup("competition")}
-          />
-          <img
-            src={bonus_logo}
-            className="img-fluid"
-            alt="Bonus"
-            id="bonus-icon"
-            title="Claim Your Bonus"
-            onClick={() => showPopup("bonus")}
-          />
+          <div className="row text-center">
+            <div className="col-6 col-md-3">
+              <a href="" className="footer-link">
+                <img
+                  src={mail_logo}
+                  className="img-fluid footer-icon"
+                  alt="Mail"
+                  id="mail-icon"
+                  title="Contact Us"
+                  onClick={() => showPopup("mail")}
+                />
+                <span>By Mail</span>
+              </a>
+            </div>
+            <div className="col-6 col-md-3">
+              <a href="" className="footer-link">
+                <img
+                  src={coin_logo}
+                  className="img-fluid footer-icon"
+                  alt="Coins"
+                  id="coin-icon"
+                  title="View Coins"
+                  onClick={() => showPopup("coin")}
+                />
+                <span>With Gold Coins</span>
+              </a>
+            </div>
+            <div className="col-6 col-md-3">
+              <a href="" className="footer-link">
+                <img
+                  src={trophy_logo}
+                  className="img-fluid footer-icon"
+                  alt="Competitions"
+                  id="competition-icon"
+                  title="Competitions"
+                  onClick={() => showPopup("competition")}
+                />
+                <span>From Competitions</span>
+              </a>
+            </div>
+            <div className="col-6 col-md-3">
+              <a href="" className="footer-link">
+                <img
+                  src={bonus_logo}
+                  className="img-fluid footer-icon"
+                  alt="Bonus"
+                  id="bonus-icon"
+                  title="Claim Your Bonus"
+                  onClick={() => showPopup("bonus")}
+                />
+                <span>Daily Bonus</span>
+              </a>
+            </div>
+          </div>
         </div>
 
         {activePopup === "mail" && (
@@ -123,7 +165,9 @@ const Home = () => {
                   including your name, address, email, and the phrase “Golden
                   Ticket Online Arcade and Casino Sweepstakes Entry” to:
                 </p>
-                <p className="mt-4">Golden Ticket Online Arcade and Casino</p>
+                <p className="mt-4 ptop">
+                  Golden Ticket Online Arcade and Casino
+                </p>
                 <p className="pOne">930 S 4th St, Ste 209 5019</p>
                 <p className="pTwo ">Las Vegas, NV 89101</p>
                 <p className="popup-footer mt-4">
@@ -187,11 +231,17 @@ const Home = () => {
             *Not all Gold Coin packages include bonus free Sweeps Coins as part
             of the promotion.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p
+            style={{
+              fontSize: "12px",
+              color: "white",
+              textAlign: "center",
+            }}
+          >
             No purchase necessary. Offer not valid in restricted or prohibited
             jurisdictions. Participants must be 18+ or the age of majority in
             their respective jurisdiction. Gaming is addictive. Please play
-            responsibly.
+            responsibly
           </p>
           <span>
             <a href="/policy">Privacy Policy</a> |

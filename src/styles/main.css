@@ -375,13 +375,16 @@ footer .ending-footer {
   background-image: url("../images/Group 16.png");
   margin: 0;
   padding: 0;
-  background-size: cover; /* Ensures the image covers the entire div */
+  background-size: cover;
   background-position: center !important;
 
-  width: 90%; /* Ensure the banner spans the full width */
+  width: 90%;
   height: 155px;
   margin-top: -100px;
+  position: relative; /* Ensure positioning is enabled */
+  z-index: -1; /* Pushes the image behind other elements */
 }
+
 .seven-support-section .sweepstakes-department {
   margin-left: 10% !important;
   font-size: 20px;
@@ -400,6 +403,7 @@ footer .ending-footer {
 }
 .contact-image img {
   width: 50px !important;
+  z-index: 1000;
 }
 /* PRIZE */
 .top-image {
@@ -1033,6 +1037,7 @@ h2 {
   .price-fifth-section h3 {
     margin-bottom: 10px;
   }
+
   .price-fifth-section p {
     font-size: 40px;
   }
@@ -1163,6 +1168,8 @@ h2 {
     width: 90%; /* Ensure the banner spans the full width */
     height: 115px;
     margin-top: -100px !important;
+    position: relative; /* Ensure positioning is enabled */
+    z-index: -1; /* Pushes the image behind other elements */
   }
   .seven-support-section {
     margin-top: 7% !important;
@@ -1197,6 +1204,7 @@ h2 {
   }
   .contact-image img {
     width: 55px !important;
+    z-index: 1000;
   }
 
   /* GAMES */
@@ -1622,6 +1630,8 @@ h2 {
   .price-fifth-section h3 {
     margin-bottom: 0px;
     font-size: 30px;
+    text-align: left !important;
+    padding: 4px !important;
   }
 
   .price-fifth-section p {
@@ -1637,8 +1647,8 @@ h2 {
     color: #f0dbdb;
   }
   .innerDivFifth .price-header {
-    font-size: 20px;
-    margin-bottom: 0px;
+    font-size: 20px !important;
+    margin-bottom: 0px !important;
   }
   .innerDivFifth .price-text {
     font-size: 20px;
@@ -1681,10 +1691,10 @@ h2 {
   }
 
   .sixSection h3 {
-    margin-top: 20px;
-    font-size: 32px;
+    margin-top: 40px;
+    font-size: 22px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .sixSection p {
     font-size: 18px;
@@ -1747,7 +1757,7 @@ h2 {
     padding: 10px;
     border-radius: 26px;
     margin-top: 10px;
-    height: 320px;
+    height: 260px;
     width: 108% !important;
     margin-left: 0px !important;
   }
@@ -1756,16 +1766,16 @@ h2 {
     color: #4f0297;
     font-weight: bold;
     font-size: 25px;
-    margin: 20px;
+    margin: 5px;
   }
   .customer-support p {
     font-size: 18px;
-    margin: 20px;
+    margin: 5px;
   }
   .customer-support a {
     color: #4f0297 !important;
     font-size: 18px;
-    margin: 20px;
+    margin: 5px;
     text-decoration: none;
   }
   .seven-support-section .box-last-img {
@@ -1776,6 +1786,8 @@ h2 {
     width: 100%; /* Ensure the banner spans the full width */
     height: 85px;
     margin-top: -60px !important;
+    position: relative; /* Ensure positioning is enabled */
+    z-index: -1; /* Pushes the image behind other elements */
   }
   .seven-support-section {
     margin-top: 7% !important;
@@ -1810,6 +1822,7 @@ h2 {
   }
   .contact-image img {
     width: 45px !important;
+    z-index: 1000;
   }
   /*  GAMES */
   .banner-games {
